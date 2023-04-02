@@ -38,3 +38,52 @@ const doWhileLoopWithThisNumber = (thisNumber) => {
 doWhileLoopWithThisNumber(13)
 doWhileLoopWithThisNumber(7)
 // 7. Write a function (you make the name) that will check if the number parameter is even or odd.
+const checkIfEvenOrOdd = (number) => {
+if ( number % 2 === 0) {
+        console.log("is even")
+} else {
+         console.log("is Odd")
+        }
+}
+checkIfEvenOrOdd(9)
+checkIfEvenOrOdd(100)
+// 8. Write a function (you make the name) that will check if the names parameter (an array) has a length of at least 4.
+const checkLength = (names) => {
+    if (names.length >= 4) {
+      return true;
+    } else {
+      return false 
+    }
+  }
+  console.log(checkLength(["Eve", "Mike", "Steve", "Jay"]))
+  console.log(checkLength(["Eve", "Mike", "Steve"]))
+  
+  // 9. Write a function (you make the name) that will take the names parameter (an array) and log all the names inside the array (you should loop through the array)
+  const logNames = (names) => {
+    for (let i = 0; i < names.length; i++) {
+      console.log(names[i])
+    }
+  };
+  logNames(["Eve", "Mike", "Steve",])
+  
+  
+  
+  // 10. Write a function (you make the name) that will log the typeof the data parameter.
+  const logTypeOfData = (data) => {
+    console.log(typeof data);
+  };
+  logTypeOfData("Dog")
+  logTypeOfData(25)
+  logTypeOfData(true)
+  
+  
+  // 11. Write a function (you make the name) that will do a loop 0-100 but only log 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+  
+  const doDecimalLoop = () => {
+    for (let i = 0; i <= 100; i++) {
+      if (i % 10 === 0) {
+        console.log(i)
+      }
+    }
+  };
+  doDecimalLoop()
