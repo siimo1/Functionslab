@@ -49,29 +49,29 @@ checkIfEvenOrOdd(9)
 checkIfEvenOrOdd(100)
 // 8. Write a function (you make the name) that will check if the names parameter (an array) has a length of at least 4.
 const checkLength = (names) => {
-    if (names.length >= 4) {
-      return true;
+    if (names.length >= 3) {
+      return true
     } else {
       return false 
     }
   }
-  console.log(checkLength(["Eve", "Mike", "Steve", "Jay"]))
-  console.log(checkLength(["Eve", "Mike", "Steve"]))
+  console.log(checkLength(["Eve", "Mike", "Steve" ]))
+  console.log(checkLength(["Eve", "Mike"]))
   
   // 9. Write a function (you make the name) that will take the names parameter (an array) and log all the names inside the array (you should loop through the array)
   const logNames = (names) => {
     for (let i = 0; i < names.length; i++) {
       console.log(names[i])
     }
-  };
-  logNames(["Eve", "Mike", "Steve",])
+  }
+  logNames(["Eve", "Mike", "Steve"])
   
   
   
   // 10. Write a function (you make the name) that will log the typeof the data parameter.
   const logTypeOfData = (data) => {
-    console.log(typeof data);
-  };
+    console.log(typeof data)
+  }
   logTypeOfData("Dog")
   logTypeOfData(25)
   logTypeOfData(true)
